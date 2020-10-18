@@ -7,6 +7,9 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.typekit.net/fxv6vsg.css">
     <link rel="icon" href="images/favicon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 </head>
 <body>
     <div id="photo">
@@ -14,10 +17,58 @@
             <img src="images/logo.png">
             <a href="index.html">BACK</a>
         </div>
-        <div class="info">
-            <h1>PHOTO</h1>
-            <p>This page is not yet complete. Come back on <a id="date2">September 3rd</a> to view photography work.</p>
+        <div class="wrapper">
+            <div class="gallery-section">
+                <div class="inner-width">
+                    <div class="gallery">
+
+                        <a href="photos/LES.png" class="image">
+                            <img src="photos/LES.png" alt="">
+                        </a>
+
+                        <a href="photos/FiDi1.JPG" class="image">
+                            <img src="photos/FiDi1.JPG" alt="">
+                        </a>
+
+                        <a href="photos/FiDi2.JPG" class="image">
+                            <img src="photos/FiDi2.JPG" alt="">
+                        </a>
+
+                        <a href="photos/LESGraf.JPG" class="image">
+                            <img src="photos/LESGraf.JPG" alt="">
+                        </a>
+
+                        <a href="photos/WTC.JPG" class="image">
+                            <img src="photos/WTC.JPG" alt="">
+                        </a>
+
+                        <a href="photos/WB.JPG" class="image">
+                            <img src="photos/WB.JPG" alt="">
+                        </a>
+
+                        <a href="photos/TKSP.JPG" class="image">
+                            <img src="photos/TKSP.JPG" alt="">
+                        </a>
+
+                        <a href="photos/ESB.JPG" class="image">
+                            <img src="photos/ESB.JPG" alt="">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+<script>
+    $(".gallery").magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
+</script>
+
 </body>
 </html>

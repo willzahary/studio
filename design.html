@@ -7,6 +7,9 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.typekit.net/fxv6vsg.css">
     <link rel="icon" href="images/favicon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 </head>
 <body>
     <div id="design">
@@ -14,10 +17,58 @@
             <img src="images/logo.png">
             <a href="index.html">BACK</a>
         </div>
-        <div class="info">
-            <h1>DESIGN</h1>
-            <p>This page is not yet complete. Come back on <a id="date1">September 3rd</a> to view design work.</p>
+        <div class="wrapper">
+            <div class="gallery-section">
+                <div class="inner-width">
+                    <div class="gallery">
+
+                        <a href="designs/gug.png" class="image">
+                            <img src="designs/gug.png" alt="">
+                        </a>
+
+                        <a href="designs/wtc.png" class="image">
+                            <img src="designs/wtc.png" alt="">
+                        </a>
+
+                        <a href="designs/esb.png" class="image">
+                            <img src="designs/esb.png" alt="">
+                        </a>
+
+                        <a href="designs/hud.png" class="image">
+                            <img src="designs/hud.png" alt="">
+                        </a>
+
+                        <a href="designs/vandy.png" class="image">
+                            <img src="designs/vandy.png" alt="">
+                        </a>
+
+                        <a href="designs/boa.png" class="image">
+                            <img src="designs/boa.png" alt="">
+                        </a>
+
+                        <a href="designs/cpt.png" class="image">
+                            <img src="designs/cpt.png" alt="">
+                        </a>
+
+                        <a href="designs/park.png" class="image">
+                            <img src="designs/park.png" alt="">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+<script>
+    $(".gallery").magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
+</script>
+
 </body>
 </html>
